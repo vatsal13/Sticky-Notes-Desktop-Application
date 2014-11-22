@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="475.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="73.0" layoutY="101.0" prefHeight="19.0" prefWidth="78.0" text="Username :" />
+    <Label layoutX="73.0" layoutY="172.0" prefHeight="18.999908447265625" prefWidth="78.0" text="Password  :" />
+    <PasswordField layoutX="186.0" layoutY="171.0" prefWidth="200.0" />
+    <TextField layoutX="186.0" layoutY="100.0" prefWidth="200.0" />
+    <ImageView fx:id="closeButton" fitHeight="35.25000190734863" fitWidth="47.00000254313151" layoutX="431.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+    <Button id="loginButton" cache="false" layoutX="73.0" layoutY="234.0" mnemonicParsing="false" opacity="0.59" prefWidth="78.0" style="#loginButton {&#10;    -fx-text-fill: white;&#10;    -fx-font-family: &quot;Arial Narrow&quot;;&#10;    -fx-font-weight: bold;&#10;    -fx-background-color:#ffffff;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );&#10;}" text="Login">
+      <effect>
+        <ColorAdjust brightness="-0.3650793650793651" contrast="0.1428571428571428" hue="0.5555555555555556" saturation="-0.20634920634920628" />
+      </effect>
+    </Button>
+    <Label layoutX="76.0" layoutY="292.0" text="Don't have an account?  " />
+    <Hyperlink id="registerLink" layoutX="238.0" layoutY="289.0" text="Register" textFill="RED" />
+    <Label id="welcomeText" layoutX="76.0" layoutY="51.0" style="" text="Sticky Notes" />
+  </children>
+</AnchorPane>

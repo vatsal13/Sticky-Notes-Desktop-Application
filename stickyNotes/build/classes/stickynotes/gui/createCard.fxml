@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" minWidth="297.0" prefHeight="345.296875" prefWidth="297.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="21.0" layoutY="14.0" text="Front">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="26.0" layoutY="154.0" text="Back" />
+    <TextArea fx:id="frontContent" layoutX="19.0" layoutY="44.0" prefHeight="102.0" prefWidth="200.0" wrapText="true" />
+    <TextArea fx:id="backContent" layoutX="26.0" layoutY="182.0" prefHeight="102.0" prefWidth="200.0" wrapText="true" />
+    <Button layoutX="21.0" layoutY="320.0" mnemonicParsing="false" onAction="#onSaveClicked" prefWidth="72.0" text="Save">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Button>
+    <Label fx:id="errorMessage" layoutX="21.0" layoutY="295.0" prefHeight="20.0" prefWidth="262.0" text="" textFill="RED" />
+  </children>
+</fx:root>

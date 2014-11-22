@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" fx:id="anchorPane" minHeight="267.0001220703125" onMouseEntered="#onTextAreaEntered" onMouseExited="#onTextAreaExited" prefHeight="321.0001220703125" prefWidth="251.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TextArea id="hello" fx:id="inputContent" layoutX="0.0" layoutY="33.0" mouseTransparent="false" pickOnBounds="true" prefHeight="217.0" prefWidth="251.0" style="" wrapText="true">
+      <stylesheets>
+        <URL value="@DatePicker.css" />
+      </stylesheets>
+    </TextArea>
+    <Pane fx:id="menuPane" layoutX="2.0" layoutY="0.0" prefHeight="33.0" prefWidth="249.0">
+      <children>
+        <ImageView fitHeight="23.5" fitWidth="23.5" layoutX="14.0" layoutY="7.0" onMouseClicked="#onDeleteClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@delete.jpg" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="26.999977111816406" fitWidth="26.999977111816406" layoutX="45.0" layoutY="6.0" onMouseClicked="#onSaveClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@save.jpg" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="23.5" fitWidth="23.5" layoutX="86.0" layoutY="7.0" onMouseClicked="#onNewClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@new.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Pane fx:id="priorityPane" layoutX="2.0" layoutY="250.0" prefHeight="17.0" prefWidth="251.0">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd466" height="17.0001220703125" layoutX="0.0" layoutY="0.0" onMouseClicked="#onRedClicked" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#10cc00" height="17.0001220703125" layoutX="27.0" layoutY="0.0" onMouseClicked="#onGreenClicked" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="17.0001220703125" layoutX="54.0" layoutY="0.0" onMouseClicked="#onBlueClicked" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+      </children>
+    </Pane>
+    <HBox fx:id="deadLineBox" layoutX="2.0" layoutY="268.0" prefHeight="27.0" prefWidth="249.0">
+      <stylesheets>
+        <URL value="@DatePicker.css" />
+      </stylesheets>
+    </HBox>
+    <Pane fx:id="errorMessagePane" layoutX="2.0" layoutY="296.0" prefHeight="24.0" prefWidth="249.0" />
+  </children>
+  <stylesheets>
+    <URL value="@DatePicker.css" />
+  </stylesheets>
+</fx:root>

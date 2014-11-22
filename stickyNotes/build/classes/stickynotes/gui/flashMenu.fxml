@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefHeight="269.96875" prefWidth="260.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Separator layoutX="0.0" layoutY="35.0" prefWidth="349.0" />
+    <Separator layoutX="0.0" layoutY="85.0" prefWidth="349.0" />
+    <Separator layoutX="0.0" layoutY="135.0" prefWidth="349.0" />
+    <Separator layoutX="0.0" layoutY="185.0" prefWidth="349.0" />
+    <ImageView fitHeight="31.5" fitWidth="42.0" layoutX="1.0" layoutY="1.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@back.png" backgroundLoading="true" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="31.499900000002526" fitWidth="31.499900000002526" layoutX="318.0" layoutY="4.0" onMouseClicked="#onLogoutClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@logout.png" />
+      </image>
+    </ImageView>
+    <Pane layoutX="1.0" layoutY="35.0" onMouseClicked="#onCreateClicked" prefHeight="50.0" prefWidth="348.0">
+      <children>
+        <Label alignment="CENTER" layoutX="89.0" layoutY="4.0" prefHeight="39.1328125" prefWidth="259.0" text="Create Pack" />
+        <ImageView fitHeight="39.1328125" fitWidth="39.1328125" layoutX="2.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@new.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Pane layoutX="0.0" layoutY="87.0" onMouseClicked="#onDeleteClicked" prefHeight="50.0" prefWidth="348.0">
+      <children>
+        <Label alignment="CENTER" layoutX="89.0" layoutY="4.0" prefHeight="39.1328125" prefWidth="259.0" text="Delete Pack" />
+        <ImageView fitHeight="39.1328125" fitWidth="39.1328125" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@delete.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Pane layoutX="1.0" layoutY="139.0" onMouseClicked="#onLoadClicked" prefHeight="50.0" prefWidth="348.0">
+      <children>
+        <Label alignment="CENTER" layoutX="89.0" layoutY="4.0" prefHeight="39.1328125" prefWidth="259.0" text="Load Pack" />
+        <ImageView fitHeight="39.1328125" fitWidth="39.1328125" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@flash.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+</fx:root>

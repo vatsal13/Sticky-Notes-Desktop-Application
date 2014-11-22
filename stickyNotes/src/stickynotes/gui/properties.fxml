@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefHeight="436.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Separator layoutX="0.0" layoutY="218.0" prefWidth="600.0" />
+    <CheckBox fx:id="noteStatus" allowIndeterminate="false" indeterminate="false" layoutX="444.0" layoutY="187.0" mnemonicParsing="false" selected="false" text="Notification" underline="false">
+      <font>
+        <Font size="16.0" fx:id="x1" />
+      </font>
+    </CheckBox>
+    <Label font="$x1" layoutX="22.0" layoutY="187.0" text="Days:" />
+    <Label font="$x1" layoutX="147.0" layoutY="186.0" text="MailId" />
+    <TextField fx:id="noteMailId" layoutX="204.0" layoutY="186.0" prefWidth="194.0" />
+    <Label font="$x1" layoutX="14.0" layoutY="14.0" text="Notes Properties" />
+    <ColorPicker fx:id="noteColor" layoutX="444.0" layoutY="48.0" />
+    <Label font="$x1" layoutX="391.0" layoutY="43.0" prefHeight="36.0" prefWidth="53.0" text="Color:" textAlignment="CENTER" />
+    <Label font="$x1" layoutX="19.0" layoutY="99.0" prefWidth="48.0" text="Size:" />
+    <ChoiceBox fx:id="noteSize" layoutX="70.0" layoutY="98.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox id="fontFamily" fx:id="noteFamily" layoutX="70.0" layoutY="50.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label font="$x1" layoutX="22.0" layoutY="51.0" text="Font:" />
+    <Label font="$x1" layoutX="22.0" layoutY="267.0" text="Font:" />
+    <ChoiceBox id="cardProperties" fx:id="cardFamily" layoutX="72.0" layoutY="265.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label font="$x1" layoutX="22.0" layoutY="330.0" prefWidth="48.0" text="Size:" />
+    <ChoiceBox fx:id="cardSize" layoutX="70.0" layoutY="330.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label font="$x1" layoutX="391.0" layoutY="229.0" prefHeight="36.0" prefWidth="53.0" text="Color:" textAlignment="CENTER" />
+    <ColorPicker fx:id="cardColor" layoutX="444.0" layoutY="235.0" prefHeight="25.0" prefWidth="91.0" />
+    <Label font="$x1" layoutX="22.0" layoutY="224.0" text="Flash Card Properties" />
+    <ChoiceBox fx:id="noteTime" layoutX="72.0" layoutY="188.0" prefWidth="53.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ImageView fitHeight="36.0" fitWidth="47.999998448258744" layoutX="538.0" layoutY="395.0" onMouseClicked="#onSaveClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@save.jpg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="18.0" layoutY="395.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@back.png" />
+      </image>
+    </ImageView>
+  </children>
+</fx:root>

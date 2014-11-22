@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefHeight="261.0" prefWidth="275.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Separator layoutX="0.0" layoutY="83.0" prefWidth="275.0" />
+    <Separator layoutX="-2.0" layoutY="133.0" prefWidth="275.0" />
+    <Separator layoutX="0.0" layoutY="33.0" prefHeight="4.0" prefWidth="275.0" />
+    <ImageView fitHeight="34.000099999997474" fitWidth="34.000099999997474" layoutX="5.0" layoutY="3.0" onMouseClicked="#onBackClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@back.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="33.99999237060547" fitWidth="33.99999237060547" layoutX="239.0" layoutY="0.0" onMouseClicked="#onLogoutClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@logout.png" />
+      </image>
+    </ImageView>
+    <Pane layoutX="-2.0" layoutY="33.0" onMouseClicked="#onLoadClicked" prefHeight="50.0" prefWidth="275.0">
+      <children>
+        <ImageView fitHeight="34.0" fitWidth="45.33333456856864" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@note2.png" />
+          </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="115.0" layoutY="17.0" prefWidth="90.0" text="Load Notes" textAlignment="CENTER">
+          <font>
+            <Font name="System Bold" size="13.0" fx:id="x1" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+    <Pane layoutX="-2.0" layoutY="85.0" onMouseClicked="#onHideClicked" prefHeight="50.0" prefWidth="274.9999000000025">
+      <children>
+        <ImageView fitHeight="40.4999915527369" fitWidth="40.4999915527369" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@note1.png" />
+          </image>
+        </ImageView>
+        <Label alignment="CENTER" font="$x1" layoutX="115.0" layoutY="17.0" prefWidth="90.0" text="Hide Notes" />
+      </children>
+    </Pane>
+  </children>
+</fx:root>

@@ -1,0 +1,4 @@
+1.You must have mysql installed in your system to use the application
+2.Import the database file given in the zip folder in your mysql
+3.Mysql must have a user with username=root and password=''
+4.Also for setting up notifications add the mail.exe in your Windows Schedule Task with the frequency of every one day or Use cron jobs if your using linux

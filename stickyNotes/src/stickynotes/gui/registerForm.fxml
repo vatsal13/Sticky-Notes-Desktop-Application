@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" prefWidth="439.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="67.0" layoutY="47.0" text="Username" />
+    <Label layoutX="67.0" layoutY="111.0" text="Password" />
+    <TextField id="username" fx:id="registerUsername" layoutX="171.0" layoutY="44.0" prefWidth="200.0" />
+    <PasswordField id="password" fx:id="registerPassword" layoutX="171.0" layoutY="108.0" prefWidth="200.0" />
+    <Label layoutX="67.0" layoutY="173.0" text="Contact" />
+    <TextField id="contact" fx:id="registerContact" layoutX="171.0" layoutY="170.0" prefWidth="200.0" />
+    <Button fx:id="registerButton" layoutX="68.0" layoutY="229.0" mnemonicParsing="false" onAction="#onRegisterButtonClicked" opacity="0.6" text="Register" />
+    <Label layoutX="83.0" layoutY="294.0" text="Already have an account? " />
+    <Hyperlink id="siginLink" fx:id="signinLink" layoutX="271.0" layoutY="291.0" onMouseClicked="#onSignInClicked" text="Sign-in" textFill="#ff3333" />
+    <Label fx:id="errorMessage" layoutX="184.0" layoutY="228.0" text="" />
+  </children>
+</fx:root>
